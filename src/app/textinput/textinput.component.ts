@@ -1,8 +1,10 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-textinput',
   standalone: true,
+  imports: [FormsModule],
   templateUrl: './textinput.component.html',
   styleUrls: ['./textinput.component.css'],
 })
