@@ -1,5 +1,5 @@
 button {
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: #cf3232;
     color: whitesmoke;
@@ -28,7 +28,7 @@ button {
     max-height: 200px; /* Altura máxima */
     overflow: auto; /* Permite el desplazamiento cuando el contenido excede la altura */
     border-radius: 5px; /* Esquinas redondeadas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 0 10px rgba(110, 110, 110, 0.1); /* Sombra sutil */
   }
   
   /* Añade un poco de estilo al placeholder */
