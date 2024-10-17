@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './result-display.component.html',
-  styleUrls: ['./result-display.component.css']
+  styleUrls: ['./result-display.component.css'],
 })
 export class ResultDisplayComponent {
-  @Input() result: string = ''; // Recibimos el resultado
+  @Input() analysisResult: string = ''; // Propiedad para recibir el resultado
 }
