@@ -1,17 +1,15 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
   standalone: true,
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  styleUrls: ['./button.component.css'],
 })
 export class ButtonComponent {
-  @Input() isTextValid: boolean = false; // Para habilitar/deshabilitar el botón
-  @Output() analyze = new EventEmitter<void>(); // Para emitir el evento de análisis
+  @Output() analyzeClicked = new EventEmitter<void>(); // Emitir evento al hacer clic
 
-  // Método que se ejecuta cuando se presiona el botón
-  onAnalyzeClick(): void {
-    this.analyze.emit();
+  onAnalyze(): void {
+    this.analyzeClicked.emit(); // Emitir evento al hacer clic
   }
 }

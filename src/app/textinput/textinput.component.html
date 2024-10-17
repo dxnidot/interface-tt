@@ -1,9 +1,6 @@
-<div>
-  <form [formGroup]="inputForm">
-    <textarea
-      formControlName="textInput"
-      placeholder="Introduce el texto a analizar"
-    ></textarea>
-    <button type="button" (click)="clearInput()">Limpiar</button>
-  </form>
-</div>
+<input
+  type="text"
+  [(ngModel)]="inputText"
+  (input)="onTextChange()"  
+  placeholder="Escribe un texto para analizar"
+/>
