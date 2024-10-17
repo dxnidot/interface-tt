@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-result-display',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './result-display.component.html',
-  styleUrl: './result-display.component.css'
+  styleUrls: ['./result-display.component.css']
 })
 export class ResultDisplayComponent {
-
+  @Input() result: string = ''; // Recibimos el resultado
 }
