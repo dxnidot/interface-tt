@@ -1,1 +1,2 @@
 <app-textinput (textChange)="onTextChange($event)"></app-textinput>
+<app-button [isTextValid]="inputText.length > 0" (analyze)="onAnalyze()"></app-button>
