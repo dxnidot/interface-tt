@@ -15,7 +15,7 @@ export class SentimentAnalysisComponent {
 
   constructor() {}
 
-  // Método para realizar el análisis de prueba
+  // Método para realizar el análisis
   analyzeText(): void {
     if (!this.text) return;
 
@@ -25,20 +25,10 @@ export class SentimentAnalysisComponent {
     // Simulamos un análisis con un pequeño retraso
     setTimeout(() => {
       // Aquí puedes simular el resultado del análisis
-      this.analysisResult = this.simulateSentimentAnalysis(this.text);
+      // this.analysisResult = this.SentimentAnalysis(this.text);
       this.isLoading = false;
     }, 2000); // Simulación de un retraso de 2 segundos para el análisis
   }
 
-  // Método que simula el resultado del análisis de sentimientos
-  simulateSentimentAnalysis(text: string): string {
-    // Simulación: Devuelve un resultado basado en el contenido del texto
-    if (text.includes('bueno') || text.includes('feliz')) {
-      return 'Positivo';
-    } else if (text.includes('malo') || text.includes('triste')) {
-      return 'Negativo';
-    } else {
-      return 'Neutral';
-    }
-  }
+
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { TextinputComponent } from './textinput/textinput.component';
 import { ButtonComponent } from './button/button.component';
@@ -14,6 +15,7 @@ import { SentimentAnalysisComponent } from './sentiment-analysis/sentiment-analy
     ButtonComponent,
     ResultDisplayComponent,
     SentimentAnalysisComponent,
+    CommonModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],

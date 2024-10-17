@@ -1,11 +1,19 @@
-<h1>Prueba de Análisis de Sentimiento</h1>
 
-<!-- Input para simular el envío de un texto de prueba -->
-<app-textinput (textChange)="onTextChange($event)"></app-textinput>
+
+<body class="">
+  <h2>
+    Prototipo analizador semántico de sentimientos sobre textos con un modelo de
+    inteligencia artificial
+  </h2>
+  <!-- Input para simular el envío de un texto de prueba -->
+  <div class="centro-container">
+    <app-textinput (textChange)="onTextChange($event)"></app-textinput>
+  </div>
+
+  <!-- Componente para mostrar el resultado -->
+  <app-result-display
+    [analysisResult]="analysisResult"
+    class="result-container"
+  ></app-result-display>
 <app-button (analyzeClicked)="onAnalyze()"></app-button>
-
-<!-- Componente de análisis -->
-<app-sentiment-analysis [text]="inputText"></app-sentiment-analysis>
-
-<!-- Componente para mostrar el resultado -->
-<app-result-display [analysisResult]="analysisResult"></app-result-display>
+</body>

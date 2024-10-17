@@ -1,8 +1,14 @@
-<input
-  type="text"
-  [(ngModel)]="inputText"
-  (input)="onTextChange()"  
-  placeholder="Escribe un texto para analizar"
-/>
-<!-- Botón para limpiar el campo de texto -->
-<button (click)="clearInput()">Limpiar</button>
+<main>
+  <div class="input-container">
+    <textarea
+      [(ngModel)]="inputText"
+      (input)="onTextChange()"
+      placeholder="Escribe un texto para analizar"
+      class="dynamic-textarea"
+    ></textarea>
+    <button (click)="clearInput()">Limpiar</button>
+  </div>  
+  <!-- Botón para limpiar el campo de texto -->
+  <div>
+  </div>
+</main>

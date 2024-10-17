@@ -1,0 +1,39 @@
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #cf3232;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+/* Centra el contenedor */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+  }
+  
+  /* Estilo del textarea */
+  .dynamic-textarea {
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    resize: none; /* Deshabilita el cambio de tamaño manual */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    width: 400px; /* Ancho inicial */
+    min-height: 50px; /* Altura mínima */
+    max-height: 200px; /* Altura máxima */
+    overflow: auto; /* Permite el desplazamiento cuando el contenido excede la altura */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  /* Añade un poco de estilo al placeholder */
+  .dynamic-textarea::placeholder {
+    color: #aaa; /* Color del placeholder */
+    font-style: italic; /* Estilo del placeholder */
+  }
+  

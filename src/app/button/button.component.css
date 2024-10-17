@@ -1,0 +1,16 @@
+button {
+    margin-top: 20px; /* Increase this value to move the button further down */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

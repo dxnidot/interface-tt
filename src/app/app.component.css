@@ -1,0 +1,27 @@
+body{
+    display:  flex;
+    flex-direction: column;
+    padding: 20px;
+}
+h2 {
+    margin-bottom: 100px;
+}
+.centro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+/* .result-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+} */
