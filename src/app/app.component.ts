@@ -11,4 +11,8 @@ import { TextinputComponent } from './textinput/textinput.component';
 })
 export class AppComponent {
   title = 'interface-tt';
+
+  onTextChange(text: string): void {
+    console.log('Texto ingresado: ', text);
+  }
 }
